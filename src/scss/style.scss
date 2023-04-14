@@ -1,9 +1,133 @@
-@import 'war.min.css';
+//переменные
+$color-blue:#0066FF;
+$color-dark:#222834;
+
+//шаблоны
+%button-blue{
+    color: white;
+    background-color: $color-blue;
+    font-size: 14px;
+    font-style: italic;
+    border: none;
+    border-radius: 10px;
+}
+%link{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+//style button
 body{
     font-family: 'ABeeZee', sans-serif;
 }
 .container{
     margin: 0px auto;
-    max-width: 1300px;
+    max-width: 1340px;
     padding: 0px 15px;
+}
+.btn__blue{
+    @extend %button-blue;
+}
+.link_buttonBlueMore{
+    @extend %link;
+    @extend %button-blue;
+    padding: 15px 37px;
+}
+.btn__consultation{
+    @extend %button-blue;
+    padding: 15px 35px;
+}
+.btn__completeSet{
+    @extend %button-blue;
+    font-size: 16px;
+    padding: 18px 30px;
+    border-radius: 50px;
+}
+.link_contactTelegram{
+    @extend %link;
+    @extend %button-blue;
+    background-color: $color-dark;
+    padding: 18px 30px;
+}
+.btn__call{
+    @extend %button-blue;
+    padding: 14px 12px 15px 20px;
+}
+//style header
+.header{
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    .nav{
+        align-items: center;
+        display: flex;
+        .nav__list{
+            display: flex;
+            margin-left: 54.5px;
+            .nav__item:nth-child(2){
+                padding-right: 30px;
+                padding-left: 30px;
+                border-right: solid 1px rgba(34, 40, 52, 0.1);
+            }
+            .nav__item:nth-child(1){
+                padding-right: 30px;
+                border-right: solid 1px rgba(34, 40, 52, 0.1);
+            }
+            .nav__item:nth-child(3){
+                padding-left: 30px;
+            }
+        }
+    }
+    .header__wraper{
+        align-self: center;
+        display: flex;
+        margin-left: 252px;
+        .btnHeader__call{
+            margin-left: 55px;
+        }
+        .messengers{
+            margin-left: 10px;
+            width: 70px;
+            height: 50px;
+            background-color: #EAEDF2;
+            position: relative;
+            border-radius: 10px;
+            .messanger__icons{
+                position: absolute;
+                margin:0px auto;
+                top: 15px;
+                left: 10px;
+            }
+            .messanger__icons:nth-child(2){
+                left: 40px;
+            }
+        }
+        .btn__language{
+            margin-left: 10px;
+            border:none;
+            background-color: rgba(234, 237, 242, 1);
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.nav__item{
+    .nav__link{
+        @extend %link;
+        color: $color-dark;
+    }
+}
+.contact__phone{
+    .contact__sub{
+        font-size: 14px;
+        opacity: 0.6;
+        color: $color-dark;
+    }
+    .phone{
+        @extend %link;
+        font-size: 16px;
+        color: $color-dark;
+    }
 }

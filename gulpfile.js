@@ -44,20 +44,6 @@ const stylesReset = () => {
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
-const stylesWar = () => {
-  return gulp.src("src/scss/war.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(scss())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(rename("war.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
-}
 
 exports.styles = styles;
 
@@ -174,11 +160,10 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("src/scss/**/*.scss", gulp.series(styles));
+  gulp.watch("src/scss/*.scss", gulp.series(styles));
   gulp.watch("src/js/script.js", gulp.series(scripts));
   gulp.watch("src/html/*.html", gulp.series(html, reload));
 }
-
 // Build
 
 const build = gulp.series(
@@ -204,7 +189,7 @@ exports.default = gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-    gulp.parallel (styles,stylesReset,stylesWar),
+    gulp.parallel (styles,stylesReset),
     html,
     scripts,
     sprite,
