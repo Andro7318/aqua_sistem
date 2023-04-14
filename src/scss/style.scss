@@ -57,7 +57,7 @@ body{
 .header{
     align-items: center;
     display: flex;
-    margin-top: 20px;
+    height: 97px;
     .nav{
         align-items: center;
         display: flex;
@@ -121,13 +121,87 @@ body{
 }
 .contact__phone{
     .contact__sub{
+        line-height: 20px;
         font-size: 14px;
         opacity: 0.6;
         color: $color-dark;
     }
     .phone{
+        line-height: 20px;
         @extend %link;
         font-size: 16px;
         color: $color-dark;
+    }
+}
+//style slider
+.slider{
+    border-radius: 10px;
+    width:1300px;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-image: url('../img/slider_background.png');
+    margin: 0px auto;
+    h2{
+        margin-left: 70px;
+        padding-top: 100px;
+        color: white;
+        font-size: 20px;
+    }
+    h1{
+        color: white;
+        font-size: 50px;
+        span{
+            color: $color-blue;
+        }
+        width: 450px;
+        margin-left: 70px;
+        padding-top: 20px;
+    }
+    .slider__description{
+        display: flex;
+        column-gap: 10px;
+        margin-left: 70px;
+        padding-top: 70px;
+        .description__card{
+            width: 150px;
+            height: 140px;
+            background: rgba(63, 71, 92, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            color: white;
+            font-size: 14px;
+        }
+        img{
+            display: block;
+            margin-left: 15px;
+            padding-top: 20px;
+            padding-bottom: 15px;
+        }
+        span{
+            line-height: 20px;
+            margin-left: 15px;
+        }
+    }
+    .slider_bottomLine{
+        display: flex;
+        column-gap: 10px;
+        margin-left: 70px;
+        margin-top: 65px;
+        .bottomLine1{
+            width: 380px;
+            height: 2px;
+            background-color: white;
+        }
+        .bottomLine2{
+            width: 380px;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .bottomLine3{
+            width: 380px;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
     }
 }
