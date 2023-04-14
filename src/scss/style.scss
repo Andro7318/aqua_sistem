@@ -1,21 +1,7 @@
-//переменные
-$color-blue:#0066FF;
-$color-dark:#222834;
-
-//шаблоны
-%button-blue{
-    color: white;
-    background-color: $color-blue;
-    font-size: 14px;
-    font-style: italic;
-    border: none;
-    border-radius: 10px;
-}
-%link{
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
+@import 'variables';
+@import 'sections/header';
+@import 'sections/slider';
+@import 'sections/productSolutions';
 //style button
 body{
     font-family: 'ABeeZee', sans-serif;
@@ -31,6 +17,7 @@ body{
 .link_buttonBlueMore{
     @extend %link;
     @extend %button-blue;
+    border-radius: 25px;
     padding: 15px 37px;
 }
 .btn__consultation{
@@ -53,155 +40,4 @@ body{
     @extend %button-blue;
     padding: 14px 12px 15px 20px;
 }
-//style header
-.header{
-    align-items: center;
-    display: flex;
-    height: 97px;
-    .nav{
-        align-items: center;
-        display: flex;
-        .nav__list{
-            display: flex;
-            margin-left: 54.5px;
-            .nav__item:nth-child(2){
-                padding-right: 30px;
-                padding-left: 30px;
-                border-right: solid 1px rgba(34, 40, 52, 0.1);
-            }
-            .nav__item:nth-child(1){
-                padding-right: 30px;
-                border-right: solid 1px rgba(34, 40, 52, 0.1);
-            }
-            .nav__item:nth-child(3){
-                padding-left: 30px;
-            }
-        }
-    }
-    .header__wraper{
-        align-self: center;
-        display: flex;
-        margin-left: 252px;
-        .btnHeader__call{
-            margin-left: 55px;
-        }
-        .messengers{
-            margin-left: 10px;
-            width: 70px;
-            height: 50px;
-            background-color: #EAEDF2;
-            position: relative;
-            border-radius: 10px;
-            .messanger__icons{
-                position: absolute;
-                margin:0px auto;
-                top: 15px;
-                left: 10px;
-            }
-            .messanger__icons:nth-child(2){
-                left: 40px;
-            }
-        }
-        .btn__language{
-            margin-left: 10px;
-            border:none;
-            background-color: rgba(234, 237, 242, 1);
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
-        }
-    }
-}
 
-.nav__item{
-    .nav__link{
-        @extend %link;
-        color: $color-dark;
-    }
-}
-.contact__phone{
-    .contact__sub{
-        line-height: 20px;
-        font-size: 14px;
-        opacity: 0.6;
-        color: $color-dark;
-    }
-    .phone{
-        line-height: 20px;
-        @extend %link;
-        font-size: 16px;
-        color: $color-dark;
-    }
-}
-//style slider
-.slider{
-    border-radius: 10px;
-    width:1300px;
-    position: relative;
-    background-repeat: no-repeat;
-    height: 600px;
-    background-image: url('../img/slider_background.png');
-    margin: 0px auto;
-    h2{
-        margin-left: 70px;
-        padding-top: 100px;
-        color: white;
-        font-size: 20px;
-    }
-    h1{
-        color: white;
-        font-size: 50px;
-        span{
-            color: $color-blue;
-        }
-        width: 450px;
-        margin-left: 70px;
-        padding-top: 20px;
-    }
-    .slider__description{
-        display: flex;
-        column-gap: 10px;
-        margin-left: 70px;
-        padding-top: 70px;
-        .description__card{
-            width: 150px;
-            height: 140px;
-            background: rgba(63, 71, 92, 0.1);
-            backdrop-filter: blur(15px);
-            border-radius: 10px;
-            color: white;
-            font-size: 14px;
-        }
-        img{
-            display: block;
-            margin-left: 15px;
-            padding-top: 20px;
-            padding-bottom: 15px;
-        }
-        span{
-            line-height: 20px;
-            margin-left: 15px;
-        }
-    }
-    .slider_bottomLine{
-        display: flex;
-        column-gap: 10px;
-        margin-left: 70px;
-        margin-top: 65px;
-        .bottomLine1{
-            width: 380px;
-            height: 2px;
-            background-color: white;
-        }
-        .bottomLine2{
-            width: 380px;
-            height: 2px;
-            background-color: rgba(255, 255, 255, 0.5);
-        }
-        .bottomLine3{
-            width: 380px;
-            height: 2px;
-            background-color: rgba(255, 255, 255, 0.5);
-        }
-    }
-}

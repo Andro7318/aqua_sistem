@@ -161,6 +161,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch("src/scss/*.scss", gulp.series(styles));
+  gulp.watch("src/scss/sections/*.scss", gulp.series(styles));
   gulp.watch("src/js/script.js", gulp.series(scripts));
   gulp.watch("src/html/*.html", gulp.series(html, reload));
 }
