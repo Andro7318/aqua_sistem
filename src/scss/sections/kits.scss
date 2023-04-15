@@ -1,0 +1,85 @@
+.kits__product{
+    margin-top: 100px;
+    .kits__button{
+        .btn__partialSet{
+            border: solid 2px #D0D0DB;
+            color: $color-dark;
+            padding: 18px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 500px;
+            margin-left: 5px;
+        }
+    }
+    h2{
+        font-size: 40px;
+        font-weight: 500;
+        color: $color-dark;
+        line-height: 48px;
+        width: 450px;
+        margin-top: 40px;
+    }
+    .kits__sub{
+        color: $color-dark;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        width: 530px;
+        margin-top: 20px;
+    }
+    .kits__list{
+        margin-top: 40px;
+        .kits__item{
+            margin-top: 20px;
+            span{
+                font-size: 14px;
+                font-weight: 500;
+                color: $color-blue;
+            }
+        }
+        p{
+            color: $color-blue;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .kits__wrapper__list{
+            display: flex;
+            .kits__left{
+                display: flex;
+                flex-direction: column;
+            }
+            .kits__right{
+                margin-left: 120px;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .kits__wrapperText{
+                color: black;
+                font-size: 16px;
+                margin-left: 25px;
+                position: absolute;
+                margin-top: 8px;
+            }
+        }
+    }
+    .kitsImg__wrapper{
+        width: 640px;
+        height: 548px;
+        .kits__product{
+            display: flex;
+            flex-direction: row;
+            div{
+                width: 120px;
+                height: 88px;
+                span{
+                    background-color: #EAEDF2;
+                    border: none;
+                    padding: 3px 5px;
+                    border-radius: 5px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

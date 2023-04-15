@@ -1,0 +1,183 @@
+.comparisons{
+    margin-top: 43px;
+    h2{
+        font-size: 40px;
+        text-align: center;
+        span:nth-child(1){
+            color: $color-blue;
+        }
+    }
+    .comparisons__card{
+        width: 100%;
+        height:450px;
+        background-color: rgba(34, 40, 52, 1);
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+        margin-top: 40px;
+        .product__left{
+            h3{
+                position: absolute;
+                font-size: 24px;
+                color: white;
+                width: 350px;
+                text-align: center;
+                font-weight: 500;
+                left: 80px;
+                top: 50px;
+                line-height: 30px;
+
+            }
+            img{
+                position: absolute;
+                top: 158px;
+                left: 58px;
+            }
+        }
+        .product__right{
+            h3{
+                position: absolute;
+                font-size: 24px;
+                color: white;
+                width: 350px;
+                text-align: center;
+                font-weight: 500;
+                left: 870px;
+                top: 55px;
+                line-height: 30px;
+            }
+            img{
+                position: absolute;
+                left: 915px;
+                top: 90px;
+            }
+        }
+    }
+    .differences{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        position: absolute;
+        left: 420px;
+        top: 160px;
+        .differences_1{
+            span:nth-child(1){
+                padding: 10px 34px;
+                color: $color-blue;
+                background-color: white;
+                border-radius: 10px;
+                font-size: 14px;
+            }
+            span:nth-child(2){
+                color: white;
+                background-color: rgba(63, 71, 92, 0.1);
+                border: solid 0px white;
+                padding: 10px 70px;
+                border-radius: 10px;
+                font-size: 14px;
+                margin-left: 8px;
+            }
+            span:nth-child(3){
+                color: $color-dark;
+                background-color: white;
+                border: solid 0px white;
+                padding: 10px 36px;
+                border-radius: 10px;
+                margin-left: 8px;
+
+            }
+        }
+    }
+    .differences_2{
+        span:nth-child(1){
+            color: $color-blue;
+            background-color: white;
+            border: solid 0px white;
+            padding: 10px 23px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        span:nth-child(2){
+            color: white;
+            background-color: rgba(63, 71, 92, 0.1);
+            border: solid 0px white;
+            padding: 10px 50px;
+            border-radius: 10px;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+        span:nth-child(3){
+            color: $color-dark;
+            background-color: white;
+            border: solid 0px white;
+            padding: 10px 19.5px;
+            border-radius: 10px;
+            margin-left: 8px;
+
+        }
+    }
+    .differences_3{
+        span:nth-child(1){
+            color: $color-blue;
+            background-color: white;
+            border: solid 0px white;
+            padding: 10px 47px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        span:nth-child(2){
+            color: white;
+            background-color: rgba(63, 71, 92, 0.1);
+            border: solid 0px white;
+            padding: 10px 17px;
+            border-radius: 10px;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+        span:nth-child(3){
+            color: $color-dark;
+            background-color: white;
+            border: solid 0px white;
+            padding: 10px 48px;
+            border-radius: 10px;
+            margin-left: 8px;
+
+        }
+    }
+    .differences_4{
+        span:nth-child(1){
+            color: $color-blue;
+            background-color: white;
+            border: solid 0px white;
+            padding: 10px 47px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        span:nth-child(2){
+            color: white;
+            background-color: rgba(63, 71, 92, 0.1);
+            border: solid 0px white;
+            padding: 10px 29px;
+            border-radius: 10px;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+        span:nth-child(3){
+            color: $color-dark;
+            background-color: white;
+            border: solid 0px white;
+            padding: 10px 48px;
+            border-radius: 10px;
+            margin-left: 8px;
+
+        }
+    }
+    button{
+        position: absolute;
+        left: 522px;
+        top: 360px;
+    }
+}
+
+
