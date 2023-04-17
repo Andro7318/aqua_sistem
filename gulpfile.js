@@ -18,7 +18,6 @@ const sync = require("browser-sync").create();
 
 const styles = () => {
   return gulp.src("src/scss/style.scss")
-    .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(scss())
     .pipe(postcss([
